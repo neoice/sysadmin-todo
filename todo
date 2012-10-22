@@ -25,6 +25,9 @@ sub newday {
 	# hack to bomb out instead of overwriting our NEWFILE.
 	# this whole method should be modified to do Perl inline writing.
 	# it should also abstract the "add checkboxes" so todo() can reuse.
+	chomp($LASTFILE);
+	chomp($NEWFILE);
+
 	if ($LASTFILE eq $NEWFILE) {
 		return 0
 	}
