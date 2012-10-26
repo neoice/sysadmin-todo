@@ -11,3 +11,15 @@ is included for historical completion.
 the script behaves differently if you run it with a different name. (this behavior may be changed/supplemented later)
 
 3) start using your new TODO system!
+
+
+
+**ideas/todo**
+
+wrap the management of TODO_PATH in `git`
+	possibly use branches/tags for projects?
+	detect "abandoned" tasks (items removed without completion)
+
+be able to report statistics (# of $TYPE tasks since $DATE)
+
+report list of $TYPE tasks
