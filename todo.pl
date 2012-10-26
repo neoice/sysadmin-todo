@@ -141,13 +141,11 @@ if ($_name eq 'newday')
 	# it should also abstract the "add checkboxes" so todo() can reuse.
 	# in this re-factored version using copy(), this may not be needed.
 	chomp($LASTFILE);
-	chomp($NEWFILE);
+	chomp($FILE);
 
-	if ($LASTFILE eq $NEWFILE) {
+	if ($LASTFILE eq $FILE) {
 		return 0
 	}
-
-	open(OUTFILE, ">$NEWFILE");
 
 	copy($LASTFILE, $FILE);
 
